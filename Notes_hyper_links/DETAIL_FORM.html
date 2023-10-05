@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Form</title>
+    <!--CSS LINKED-->
+    <link rel="stylesheet" href="../Notes_Css_Files/Form_project1_by_apnacollage.css">
+
+</head>
+<body>
+    <form action="" method="get" class="form">
+    <!--Form start from here-->
+
+    
+        <h1 class="form_heading" >FORM</h1>
+                <!--BASIC INFO. SECTION-->
+            <fieldset class="basic_info">
+                <legend>Basic Information</legend>
+                
+                <p class="name">Name</p>
+                <input type="text" class="name" id="input_name">
+
+                <p class="DOB">DOB</p>
+                <input type="date" class="DOB" id="input_DOB">
+
+                <p class="email">Email </p>
+                <input type="email" class="email"id="input_email">
+
+                <p class="number">Phone Number</p>
+                <input type="number" class="number" id="input_number">
+
+
+                <p class="pincode">Pincode</p>
+                <input type="number" class="pincode" id="input_pincode">
+
+                <p class="address">Address  </p>
+                <input type="text" name="address" id="input_address">
+            </fieldset>
+
+                 <!--Qualification section-->
+
+            <fieldset class="qualification_section">
+                <legend>Highest Qualification</legend>
+            
+                <select class name="highest_qualification" id="">
+                   <option value="Below_10th">Below 10th</option>
+                   <option value="10th_passed">10th Passed</option>
+                   <option value="12th_passed">12th Passed</option>
+                   <option value="ug">Under Graduate</option>
+                   <option value="pg">Post Graduate</option>
+                </select>
+
+                <p class="instituation_name">Instituation Name</p>
+                <input type="text" class="instituation_name" id="input_instituation_name">
+                
+                <p class="passed_year">Year</p>
+                <input type="text" class="passed_year" id="input_passed_year">
+            
+            </fieldset>
+                
+                <!--SUBMIT BUTTON-->
+            <input type="button" class="submit_button" id="input_submit_button" value="SUBMIT">
+
+
+         </form>
+</body>
+</html>

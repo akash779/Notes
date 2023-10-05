@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        h1 {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Basic Properties</h1>
+    <h2>Background</h2>
+    <p>The background properties allow you to customize the background of an element.</p>
+    <ul>
+        <li><strong>background-color:</strong> sets the background color.</li>
+        <li><strong>background-image:</strong> sets the background image.</li>
+        <li><strong>background-attachment:</strong> sets whether the background scrolls with the content or remains fixed.</li>
+        <li><strong>background-repeat:</strong> sets how the background image is repeated.</li>
+        <li><strong>background-size:</strong> sets the size of the background image.</li>
+    </ul>
+    <div class="example">
+        <h3>Example:</h3>
+        <pre>
+            body {
+                background-color: #f5f5f5;
+                background-image: url('background.jpg');
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </pre>
+    </div>
+
+    <h2>Fonts</h2>
+    <p>The font properties allow you to control the appearance of text.</p>
+    <ul>
+        <li><strong>font-family:</strong> sets the font family.</li>
+        <li><strong>font-style:</strong> sets the font style (e.g., italic).</li>
+        <li><strong>font-size:</strong> sets the font size.</li>
+        <li><strong>font-weight:</strong> sets the font weight (e.g., bold).</li>
+    </ul>
+    <div class="example">
+        <h3>Example:</h3>
+        <pre>
+            p {
+                font-family: 'Arial', sans-serif;
+                font-style: italic;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </pre>
+    </div>
+
+    <h2>Text Formatting</h2>
+    <p>The text formatting properties allow you to control the appearance of text content.</p>
+    <ul>
+        <li><strong>color:</strong> sets the text color.</li>
+        <li><strong>text-align:</strong> aligns the text horizontally.</li>
+        <li><strong>text-align-last:</strong> aligns the last line of text in a block.</li>
+        Sure! Here are the remaining text formatting properties:
+
+```html
+        <li><strong>text-align:</strong> aligns the text horizontally.</li>
+        <li><strong>text-align-last:</strong> aligns the last line of text in a block.</li>
+        <li><strong>text-decoration:</strong> adds decorations to text (e.g., underline, line-through).</li>
+        <li><strong>text-transform:</strong> transforms the case of the text (e.g., uppercase, lowercase).</li>
+        <li><strong>text-indent:</strong> specifies the indentation of the first line of text.</li>
+        <li><strong>letter-spacing:</strong> adjusts the spacing between individual letters.</li>
+        <li><strong>word-spacing:</strong> adjusts the spacing between words.</li>
+    </ul>
+    <div class="example">
+        <h3>Example:</h3>
+        <pre>
+            p {
+                color: #333;
+                text-align: center;
+                text-align-last: justify;
+                text-decoration: underline;
+                text-transform: uppercase;
+                text-indent: 20px;
+                letter-spacing: 2px;
+                word-spacing: 5px;
+            }
+        </pre>
+    </div>
+
+    <h2>Shorthand</h2>
+    <p>CSS provides shorthand notations to simplify the declaration of multiple properties.</p>
+    <ul>
+        <li><strong>background:</strong> combines background properties into a single declaration.</li>
+        <li><strong>font:</strong> combines font properties into a single declaration.</li>
+        <li><strong>text:</strong> combines text properties into a single declaration.</li>
+    </ul>
+    <div class="example">
+        <h3>Example:</h3>
+        <pre>
+            body {
+                background: #f5f5f5 url('background.jpg') fixed no-repeat cover;
+                font: italic bold 18px/1.5 'Arial', sans-serif;
+                text: center justify underline uppercase 20px/1.5 #333;
+            } 
+            <h2>Box Model</h2>
+            <p>The box model properties control the dimensions and spacing of elements.</p>
+            <ul>
+                <li><strong>width:</strong> sets the width of an element.</li>
+                <li><strong>height:</strong> sets the height of an element.</li>
+                <li><strong>margin:</strong> sets the margin space around an element.</li>
+                <li><strong>padding:</strong> sets the padding space inside an element.</li>
+                <li><strong>border:</strong> sets the border properties of an element.</li>
+                <li><strong>box-sizing:</strong> controls how the total width and height of an element is calculated.</li>
+            </ul>
+            <div class="example">
+                <h3>Example:</h3>
+                <pre>
+                    .box {
+                        width: 200px;
+                        height: 150px;
+                        margin: 10px;
+                        padding: 20px;
+                        border: 1px solid #ccc;
+                        box-sizing: border-box;
+                    }
+        </pre>
+    </div>
+</body>
+</html>

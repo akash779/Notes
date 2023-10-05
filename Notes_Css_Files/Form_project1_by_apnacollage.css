@@ -1,0 +1,42 @@
+*{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-transform: capitalize;color: rebeccapurple}
+.form
+{
+    margin: 5%;padding: 3%;margin-top: 0.5%;padding-top: 0.5%;
+    
+}
+.form_heading{color:purple;}
+.basic_info,.qualification_section{background-color: rgba(211, 211, 211, 0.22);
+
+}
+#input_name,#input_DOB,#input_email,#input_number,#input_pincode,#input_address,#input_instituation_name,#input_passed_year
+{   
+
+    width: 100%;
+    border-radius: 3px;
+    border-color: rgba(102, 51, 153, 0.328);
+}
+#input_submit_button
+{
+    position: relative;left: 0.39%;width: 99.2%;height:35px;
+    background-color: lightgreen;
+    border-radius: 150px;
+    color: lightseagreen;
+    font: 1.2em sans-serif;
+}
+#input_submit_button:hover
+{   color: lightgreen ;
+    background-color: lightseagreen;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.qualification_section,#input_submit_button{
+    position: relative;
+    margin-top: 3.8%;
+    
+}
+.basic_info,.qualification_section{
+    border-radius:10px;
+    border-color: rebeccapurple;
+    border-style:dotted;
+
+}

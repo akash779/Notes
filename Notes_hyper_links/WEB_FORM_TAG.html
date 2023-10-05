@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <h1>SIMPLE FORM USING BASIC ATTRIBUTES OF FORM</h1><br><br><br>
+    <form><h2>Payment Form</h2><br>
+        <h3>Contact Info.</h3>
+        <label for="fname">Name* </label><br> 
+        <input type="text" id="fname" required> <br><br>
+        <label for="faddress">Address*</label><br>
+        <textarea name="address" id="faddress" cols="40" rows="3" required>Full Address</textarea><br><br>
+
+        <label for="gendr">Gender*:</label>
+        M<input type="radio" name="Gender"  id="fgender" required>  
+        F<input type="radio"  name="Gender" id="fgender"required><br><br>
+        
+        <label for="femail">Email:</label><br>
+        <input type="email" name="email" id="femail"><br><br>
+        <label for="Pincode">Pincode:</label><br>
+        <input type="number" name="Pincode" id="fpincode">
+
+        <h3>Card detail</h3><br>
+
+        <label for="fcard">Select Card:</label>
+        <select name="Card Type" id="fcard" required>
+            <option value="">--select a card type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="master_card">Master Card</option>
+        </select><br><br>
+       
+        <label for="name_on_card">Name On card*</label><br>
+        <input type="text" name="name_on_card" id="fname_on_card" required><br><br>
+        
+        <label for="fcard_num">Card Number*:</label><br>
+        <input type="text" name="card_num" id="fcard_num" required><br><br>
+        
+        <label for="fexpiry_date">Card Valid till</label><br>
+        <input type="date" name="expiry_date" id="fexpiry_date" required><br><br>
+        
+        <label for="fcvv">CVV*</label><br>
+        <input type="password" name="cvv" id="fcvv" required ><br><br>
+
+
+        
+        <input type="submit" value="Pay Now" name="Final_submit" id="ffinal_submit"> 
+        <input type="reset" value="Reset">
+        
+    </form>
+</body>
+</html>

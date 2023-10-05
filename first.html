@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Notes</title>
+  <style>
+    /* CSS styles for responsiveness */
+    @media only screen and (max-width: 600px) {
+      /* Styles for screens with a maximum width of 600px */
+      body {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      /* Styles for screens with a minimum width of 601px and maximum width of 900px */
+      body {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    @media only screen and (min-width: 901px) {
+      /* Styles for screens with a minimum width of 901px */
+      body {
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 22px; color: rebeccapurple
+        
+        ;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Notes</h1>
+  <p>This website demonstrates how to make a responsive website using CSS media queries.</p>
+  <h2>Syntax:</h2>
+  <pre>
+    @media only screen and (max-width: 600px) {
+      /* Styles for screens with a maximum width of 600px */
+      /* CSS code for small screens */
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      /* Styles for screens with a minimum width of 601px and maximum width of 900px */
+      /* CSS code for medium screens */
+    }
+    @media only screen and (min-width: 901px) {
+      /* Styles for screens with a minimum width of 901px */
+      /* CSS code for large screens */
+    }
+  </pre>
+</body>
+</html>

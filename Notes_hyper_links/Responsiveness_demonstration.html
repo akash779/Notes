@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness_Demonstration</title>
+    <style>
+        h1 {
+          color: blue;
+          font-size: 24px;
+        }
+        p {
+          color: green;
+        }
+        @media screen and (min-width:600px)
+        {
+          p3{color:red;}
+        }
+        @media (orientation:landscape)
+        {
+          p4{color:red;}
+        }
+        @media screen and (min-width:700px) and (orientation:landscape)
+        {
+          p5{color:red;}
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Responsiveness Of Website</h1>
+    <p1>
+        Website responsiveness refers to the ability of a website to adapt and display appropriately on various devices and screen sizes, providing users with an optimal viewing and browsing experience. A responsive website ensures that the content, layout, and design elements dynamically adjust to fit different screen resolutions, including desktops, laptops, tablets, and smartphones.
+    </p1>
+    <div class="text">
+      <p>Lets understand how responsiveness actualy work for website-</p><br>
+      
+      <p3>1-If you increase the width of screen greater than 600 pixel then this line turn into red.</p3><br>
+      
+      <p4>2-If you change screen orientation to landscape mode then this line show Red color. </p4><br>
+      
+      <p5>3-If you increase the width of screen greater then 600 pixel and orientation of screen is landscape then this line show in red color.</p5><br>
+    
+    </div>
+
+    
+</body>
+</html>
