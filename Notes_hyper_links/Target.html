@@ -2,18 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML target Attribute Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .example {
+            margin: 20px 0;
+        }
+        .example a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .example a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <a href="C:\Users\saurabh\OneDrive - iitkgp.ac.in\Desktop\Akash Web development\first.html"
-     target="_blank">_blank</a><br>
-     <a href="C:\Users\saurabh\OneDrive - iitkgp.ac.in\Desktop\Akash Web development\first.html"
-     target="_parent">_parent</a><br>
-     <a href="C:\Users\saurabh\OneDrive - iitkgp.ac.in\Desktop\Akash Web development\first.html"
-     target="_self">_self</a><br>
-     <a href="C:\Users\saurabh\OneDrive - iitkgp.ac.in\Desktop\Akash Web development\first.html"
-     target="_top">_top</a><br>
+    <h1>Exploring the HTML <code>target</code> Attribute</h1>
+
+    <div class="example">
+        <h2>Example 1: <code>_blank</code></h2>
+        <p><a href="https://www.example.com" target="_blank">Visit Example.com</a></p>
+        <p>Opens the link in a new browser tab or window.</p>
+    </div>
+
+    <div class="example">
+        <h2>Example 2: <code>_self</code> (Default)</h2>
+        <p><a href="https://www.example.com">Visit Example.com</a></p>
+        <p>Opens the link in the same frame or tab.</p>
+    </div>
+
+    <div class="example">
+        <h2>Example 3: <code>_parent</code></h2>
+        <p><a href="https://www.example.com" target="_parent">Visit Example.com</a></p>
+        <p>Opens the link in the parent frame or window.</p>
+    </div>
+
+    <div class="example">
+        <h2>Example 4: <code>_top</code></h2>
+        <p><a href="https://www.example.com" target="_top">Visit Example.com</a></p>
+        <p>Breaks out of all frames and displays the link in the top-level window or tab.</p>
+    </div>
+
+    <div class="example">
+        <h2>Example 5: Custom Frame Name</h2>
+        <p><a href="https://www.example.com" target="myframe">Visit Example.com in My Frame</a></p>
+        <p>Opens the link in a custom-named frame or window. If it doesn't exist, a new one is created.</p>
+    </div>
+
 </body>
 </html>
