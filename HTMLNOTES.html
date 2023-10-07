@@ -560,6 +560,73 @@
  <a href="./Notes_hyper_links/gridbox_challange_2.html" target="_blank" rel="noopener noreferrer">GRIDBOX CHALLANGE_2</a>
 
   
+<!--TRANSITION AND ANIMATION-->
+
+<h1>CSS Transitions and Animations</h1>
+
+<h2>CSS Transitions</h2>
+<p>CSS transitions allow you to smoothly animate the changes in CSS properties over a specified duration. They are commonly used to create subtle hover effects, fade-ins, and other animations without requiring JavaScript.</p>
+<ul>
+    <li><strong>transition-property:</strong> specifies which CSS properties will be transitioned.</li>
+    <li><strong>transition-duration:</strong> sets the duration of the transition.</li>
+    <li><strong>transition-timing-function:</strong> defines the timing function for the transition (e.g., ease, linear, ease-in-out).</li>
+    <li><strong>transition-delay:</strong> adds a delay before the transition starts.</li>
+</ul>
+<div class="example">
+    <h3>Example:</h3>
+    <pre>
+        button {
+            transition-property: background-color, color;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+
+        button:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+    </pre>
+</div>
+
+<h2>CSS Animations</h2>
+<p>CSS animations provide more advanced and customizable animations compared to transitions. They allow you to create keyframes and define complex animations using CSS.</p>
+<ul>
+    <li><strong>@keyframes:</strong> defines a set of keyframes that specify the animation's behavior at various points in time.</li>
+    <li><strong>animation-name:</strong> specifies the name of the keyframes you want to use.</li>
+    <li><strong>animation-duration:</strong> sets the duration of the animation.</li>
+    <li><strong>animation-timing-function:</strong> defines the timing function for the animation.</li>
+    <li><strong>animation-delay:</strong> adds a delay before the animation starts.</li>
+    <li><strong>animation-iteration-count:</strong> specifies the number of times the animation should run.</li>
+    <li><strong>animation-direction:</strong> sets the direction of the animation (normal, reverse, alternate, alternate-reverse).</li>
+</ul>
+<div class="example">
+    <h3>Example:</h3>
+    <pre>
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .slide {
+            animation-name: slide-in;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </pre>
+</div>
+
+<!--chat gpt genrated web page explain animation and transtion details-->
+<a href="./Notes_hyper_links/chat_gpt_genrated_data/transition_and_animation_explain.html" target="_blank" rel="noopener noreferrer">TRANSITION VS ANIMATIION</a>
+
+
 
 </body>
 </html>

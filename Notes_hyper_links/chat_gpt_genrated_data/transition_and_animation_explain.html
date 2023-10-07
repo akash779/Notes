@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions and Animations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            color: #333;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            margin: 20px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .box:hover {
+            background-color: #ff5722;
+            transform: scale(1.2);
+        }
+        .animation-box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            margin: 20px;
+            display: inline-block;
+            animation: colorChange 2s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% {
+                background-color: #007bff;
+            }
+            100% {
+                background-color: #ff5722;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions and Animations</h1>
+
+    <div class="section">
+        <h2>Transitions</h2>
+        <p>Transitions are used to create smooth changes when an element's property changes. Hover over the box to see an example:</p>
+        <div class="box"></div>
+    </div>
+
+    <div class="section">
+        <h2>Animations</h2>
+        <p>Animations are used to create complex and continuous visual effects. Here's an animated box:</p>
+        <div class="animation-box"></div>
+    </div>
+
+    <style>
+        /* Additional styles for code formatting */
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        }
+    </style>
+</body>
+</html>
