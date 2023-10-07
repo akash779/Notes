@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridbox_challange_2</title>
+
+
+    <style>
+
+        .main
+        {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);  
+            grid-template-rows: repeat(9,3.5em);  
+        }
+        .box{
+        
+            background-color: rgba(19, 15, 229, 0.566);
+            border: 0.15em solid white;
+        }
+        #box1{
+            grid-row-start: 1;
+            grid-row-end: 10;
+        }
+        #box2{
+
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end:3 ;
+        }
+        #box3{
+
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 8;
+        }
+        #box4{
+
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 8;
+        }
+        #box5{
+
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 8;
+            grid-row-end: 10;
+        }
+            
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="box" id="box1">NAV</div>
+        <div class="box" id="box2">HEADER</div>
+        <div class="box" id="box3">Article</div>
+        <div class="box" id="box4">ADDS</div>
+        <div class="box" id="box5">FOOTER</div>
+    </div>
+
+</body>
+</html>
